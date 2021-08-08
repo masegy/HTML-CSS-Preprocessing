@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;800&display=swap');
+@import "base";
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400&family=Permanent+Marker&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif ;
+    font-weight: 500 ;
+    font-size: 20px ;
+    color: #edf0f1 ;
+    text-decoration: none ;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px 10%;
+    position: fixed;
+
+    .nav-link{
+        list-style: none;
+        li{
+            display: inline-block;
+            padding: 0px 20px;
+
+            a{
+                transition: all 0.3s ease 0s;
+
+                &:hover{
+                    color: goldenrod;
+                }
+            }
+        }
+    
+    }
+    button{
+        padding: 9px 25px;
+        background-color: $secondary-color;
+        box-shadow: 3px 4px 2px black;
+        border-radius: 50px;
+        border: none;
+
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        &:hover{
+            box-shadow: 3px 4px 2px #ccc;
+            background-color: goldenrod;
+            color: black;
+        }
+    }
+
+}
+
+.site-hero{
+    background-image: url(images/homepage-1.jpg);
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+    .row{
+        content: "";
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        min-height: 800px;
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            font-family: "Permanent Marker", sans-serif ;
+            font-weight: 400 ;
+            font-size: 70px ;
+            color: black ;
+        }
+        h3{
+            font-family: "Hahmlet", sans-serif ;
+            font-weight: 400 ;
+            font-size: 70px ;
+            color: black;
+        }
+    }
+}
+
+.site-synopsis{
+    padding: 5em 0;
+
+    .container{
+
+        display: flex;
+        flex-direction: column;
+        font-family: "Hahmlet",sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+
+        h3{
+            font-family: "Permanent Marker",sans-serif;
+            font-weight: 400;
+            font-size: 52px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        hr{
+            border: 4px solid black;
+            width:50%; 
+            margin-left:25% !important; 
+            margin-right:25% !important;
+
+        }
+
+        .container-synopsis{
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            padding: 3em 1em;
+            
+            img{
+                width: 800px;
+                height: 600px;
+
+                box-shadow: 10px 10px 13px grey;
+                object-fit: cover;
+                transition: all 0.3s ease-in 0s;
+
+                &:hover{
+                    box-shadow: 10px 10px 13px red;
+                }
+            }
+            p{
+                padding: 0 3em;
+                font-family: "Hahmlet", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: justify;
+                text-indent: 50px;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+
+.site-character{
+    padding: 5em 0;
+    background-color: $third-color;
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        .main-character{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h1{
+                font-family: "Permanent Marker", sans-serif;
+                font-weight: 300;
+                font-size: 32px;
+                color: white;
+                padding-bottom: 1em;
+            }
+
+            .card-image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding-bottom: 2em;
+
+                img{
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    background-color:black;
+                    border-radius: 50px;
+                }
+
+                h1{
+                    font-family: "Hahmlet", sans-serif;
+                    font-weight: 400;
+                    font-size: 22px;
+                    color: white;
+                    padding-bottom: 1em;
+                }
+
+                h3{
+                    font-family: "Permanent Marker", sans-serif;
+                    font-weight: 300;
+                    font-size: 18px;
+                    color: white;
+                }
+            }
+        }
+
+        .supporting-character{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            .card-image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding-bottom: 2em;
+                h1{
+                    font-family: "Hahmlet", sans-serif;
+                    font-weight: 400;
+                    font-size: 22px;
+                    color: white;
+                    padding-bottom: 1em;
+                }
+
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-content: center;
+
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        object-fit: cover;
+                        background-color:black;
+                        border-radius: 50px;
+                    }
+                    
+
+                    li{
+                        padding: 1em;
+                        text-decoration: none;
+                        display: inline-block;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        h3{
+                            font-family: "Permanent Marker", sans-serif;
+                            font-weight: 300;
+                            font-size: 18px;
+                            color: white; 
+                        }
+                    }
+                }
+            }
+            
+
+        }
+        .villian-character{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            .card-image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding-bottom: 2em;
+                h1{
+                    font-family: "Hahmlet", sans-serif;
+                    font-weight: 400;
+                    font-size: 22px;
+                    color: white;
+                    padding-bottom: 1em;
+                }
+
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-content: center;
+
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        object-fit: cover;
+                        background-color:black;
+                        border-radius: 50px;
+                    }
+                    
+
+                    li{
+                        padding: 1em;
+                        text-decoration: none;
+                        display: inline-block;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        h3{
+                            font-family: "Permanent Marker", sans-serif;
+                            font-weight: 300;
+                            font-size: 18px;
+                            color: white; 
+                        }
+                    }
+                }
+            }
+            
+
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding: 30px 10%;
+    background-color: white;
+
+    .footer-end{
+        list-style: none;
+        li{
+            display: inline-block;
+            padding: 0px 20px;
+            font-family: "Hahmlet"sans-serif;
+            font-size: 16px;
+            color: black;
+        }
+    }
+
+}
